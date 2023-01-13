@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/Muli.ttf);
+}
+@font-face {
+  font-family: Muli-b;
+  src: url(../fonts/Muli-Bold.ttf);
+}
+@font-face {
+  font-family: Muli-bi;
+  src: url(../fonts/Muli-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Muli-el;
+  src: url(../fonts/Muli-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Muli-eli;
+  src: url(../fonts/Muli-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: Muli-i;
+  src: url(../fonts/Muli-Italic.ttf);
+}
+@font-face {
+  font-family: Muli-l;
+  src: url(../fonts/Muli-Light.ttf);
+}
+@font-face {
+  font-family: Muli-li;
+  src: url(../fonts/Muli-LightItalic.ttf);
+}
+@font-face {
+  font-family: Muli-sbi;
+  src: url(../fonts/Muli-Semi-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Muli-sb;
+  src: url(../fonts/Muli-SemiBold.ttf);
+}
+@keyframes HeaderButton {
+  from {
+    background-color: var(--Primarycolor);
+  }
+  to {
+    background-color: red;
+  }
+}
+.header-container {
+  margin-bottom: 84px;
+}
+.trafalgar-button {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: var(--Primarycolor);
+  font: 700 26px Muli;
+  color: var(--FourthPrimarycolor);
+  line-height: 41px;
+  margin-right: 12px;
+  /* animation: HeaderButton 4s linear 1s infinite alternate; */
+}
+.header-nav {
+  margin-top: 56px;
+}
+.trafalgar-title {
+  font: 700 24px Muli;
+  line-height: 30.12px;
+  color: #233348;
+}
+#navbarNav ul li a {
+  color: #1f1534;
+  line-height: 22.59px;
+  transition: all 2s;
+}
+#navbarNav ul li a:hover {
+  transform: scale(0.95, 0.95);
+  color: red;
+}
+#navbarNav ul li:not(:first-child) a {
+  opacity: 0.5;
+  font: 400 18px Muli-b;
+}
+#navbarNav ul li:first-child a {
+  font: 700 18px Muli-b;
+}
+.first-section {
+  background-image: url(../image/element.svg);
+  background-repeat: no-repeat;
+}
+.first-section-title {
+  font: 700 48px Muli;
+  color: var(--ThirdPrimarycolor);
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+.first-section-description {
+  font: 300 21px Muli-bi;
+  line-height: 32px;
+  color: var(--SecondPrimarycolor);
+}
+.btn {
+  width: 200px;
+  height: 60px;
+  margin-top: 45px;
+  border-radius: 55px;
+  font: 700 18px Muli-b;
+  line-height: 60px;
+  color: var(--FourthPrimarycolor);
+}
+@media only screen and (max-width: 991px) {
+  .btn {
+    width: 100%;
+  }
+  .first-section-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.section2 {
+  margin-top: 190px;
+}
+.section2-title {
+  font: 700 36px Muli-sbi;
+  line-height: 56px;
+  color: var(--ThirdPrimarycolor);
+}
+.section2-title-bottom {
+  width: 56px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--ThirdPrimarycolor);
+}
+.section2-description {
+  font: 300 18px Muli-b;
+  line-height: 30px;
+  color: var(--SecondPrimarycolor);
+  margin-bottom: 80px;
+}
