@@ -99,7 +99,7 @@
   line-height: 32px;
   color: var(--SecondPrimarycolor);
 }
-.btn {
+.header-button {
   width: 200px;
   height: 60px;
   margin-top: 45px;
@@ -119,6 +119,10 @@
 }
 .section2 {
   margin-top: 190px;
+  margin-bottom: 69px;
+  background-image: url(../image/element.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .section2-title {
   font: 700 36px Muli-sbi;
@@ -136,4 +140,20 @@
   line-height: 30px;
   color: var(--SecondPrimarycolor);
   margin-bottom: 80px;
+}
+.button-row{
+  margin-top: 69px;
+}
+.learn-more-button {
+  width: 200px;
+  height: 60px;
+  border-radius: 55px;
+  border: 1px solid var(--Primarycolor);
+  background-color: transparent;
+  font: 700 18px Muli;
+  color: var(--Primarycolor);
+  transition: transform 2s;
+}
+.learn-more-button:hover{
+  transform: scale(0.95, 0.95);
 }
