@@ -1,0 +1,15 @@
+@media only screen and (max-width: 991px) {
+  .btn {
+    width: 100%;
+  }
+  .first-section-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer-right {
+    display: none;
+  }
+  .footer-left {
+    flex-basis: 100%;
+  }
+}

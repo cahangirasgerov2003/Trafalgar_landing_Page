@@ -58,7 +58,7 @@
   color: var(--FourthPrimarycolor);
   line-height: 41px;
   margin-right: 12px;
-  /* animation: HeaderButton 4s linear 1s infinite alternate; */
+  animation: HeaderButton 4s linear 2s infinite alternate;
 }
 .header-nav {
   margin-top: 56px;
@@ -107,15 +107,6 @@
   font: 700 18px Muli-b;
   line-height: 60px;
   color: var(--FourthPrimarycolor);
-}
-@media only screen and (max-width: 991px) {
-  .btn {
-    width: 100%;
-  }
-  .first-section-row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
 .section2 {
   margin-top: 190px;
@@ -219,6 +210,9 @@
   justify-content: flex-start;
   margin: 50px 0 50px 0;
 }
+.download-button:hover {
+  background-color: rgb(24, 177, 177);
+}
 .fa-solid {
   font-size: 19px;
 }
@@ -286,19 +280,23 @@
 .circle-box-1 {
   background-color: red;
 }
-.left-arrow:hover,
-.right-arrow:hover {
-  text-decoration: none;
-}
-.left-arrow,
-.left-arrow:hover {
+.left-arrow {
   margin-right: 80px;
   color: #5b9bf3;
 }
-.right-arrow,
-.right-arrow:hover {
+.right-arrow {
   margin-left: 80px;
   color: red;
+}
+.left-arrow:hover {
+  color: green;
+}
+.right-arrow:hover {
+  color: green;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  text-decoration: none;
 }
 .section7 {
   margin: 100px 0;
@@ -341,16 +339,12 @@
   border-radius: 20px;
   transition: all 2s;
   cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
-.section7-image:hover{
+.section7-image:hover {
   background-color: rgb(204, 79, 79);
-  transform: scale(0.99,0.99);
-}
-.section7-left-img {
-  margin-right: 30px;
-}
-.section7-center-img {
-  margin-right: 30px;
+  transform: scale(0.99, 0.99);
 }
 .section7-image h4 {
   font: 700 21px Muli;
@@ -382,5 +376,46 @@
   margin-right: 6px;
 }
 .footer {
-  background-image: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  height: 432px;
+  background-image: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+.footer-left {
+  flex-basis: 34%;
+}
+.footer-left button {
+  background-color: green;
+  color: var(--FourthPrimarycolor);
+  animation: none;
+}
+.footer-left p {
+  font-weight: 300;
+  font-family: "Muli-bi";
+  line-height: 28px;
+  color: var(--FourthPrimarycolor);
+}
+.footer-left p:first-child {
+  font-size: 18px;
+}
+.footer-left p:last-child {
+  font-size: 16px;
+}
+.footer-right {
+  display: flex;
+  flex-basis: 60%;
+}
+.footer-right ul li {
+  font: 300 18px Muli;
+  line-height: 38px;
+}
+.footer-right ul li:first-child {
+  font: 700 20px Muli;
+  line-height: 60px;
+}
+.footer-right ul li a {
+  color: var(--FourthPrimarycolor);
+  text-decoration: none;
+  transition: color 2s;
+}
+.footer-right ul li a:hover {
+  color: aqua;
 }
